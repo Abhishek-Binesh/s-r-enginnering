@@ -12,15 +12,29 @@
 
 <body>
   
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-info">
+        <span><i class="fas fa-phone-alt"></i> +91 9891080677</span>
+        <span><i class="fas fa-phone-alt"></i> +91 8076716378</span>
+        <span><i class="fas fa-envelope"></i> srengineering503@gmail.com</span>
+        <span><i class="fas fa-map-marker-alt"></i> JA-47D, Hari Nagar, New Delhi, India</span>
+      </div>
+    </div>
+  </div>
+  
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="logo">
         <span class="logo-icon"><i class="fas fa-cogs"></i></span>
         <div class="logo-text">
           <h1>S R Engineering</h1>
+          <p>Printing & Packaging Machinery</p>
         </div>
       </a>
-      <button class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -31,25 +45,50 @@
     </div>
   </nav>
   
+  <!-- Page Header automatically animates via CSS -->
   <div class="page-header">
     <div class="container">
       <h1>Contact Us</h1>
-      <p>Get in touch for quotes and inquiries</p>
+      <p>Get in touch for machine details, pricing and business enquiries</p>
     </div>
   </div>
   
   <section class="section">
     <div class="container">
       <div class="contact-wrapper">
-        <div class="contact-details">
-          <h2>Get In Touch</h2>
-          <p>Reach out to us for machine specifications, pricing, and orders.</p>
+        
+        <!-- Slide in from the left -->
+        <div class="contact-details reveal-left">
+          <h2>Contact Information</h2>
+          <p>
+            Reach out to us for machine specifications, pricing, spare parts and service enquiries.
+          </p>
           
           <div class="contact-item">
             <i class="fas fa-map-marker-alt"></i>
             <div>
               <h4>Address</h4>
-              <p>Lig Flats, Ja-47d, Ashram Mandir,<br>Hari Enclave, Mayapuri West,<br>New Delhi - 110064, India</p>
+              <p>
+                JA-47D, Hari Nagar<br>
+                New Delhi, Delhi<br>
+                India
+              </p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-user"></i>
+            <div>
+              <h4>Owner</h4>
+              <p>Shobhana V P Chandran</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-user-tie"></i>
+            <div>
+              <h4>Marketing Manager</h4>
+              <p>Vysakh Ravi</p>
             </div>
           </div>
           
@@ -57,7 +96,8 @@
             <i class="fas fa-phone-alt"></i>
             <div>
               <h4>Phone</h4>
-              <p>+91-8047799659</p>
+              <p>+91 9891080677</p>
+              <p>+91 8076716378</p>
             </div>
           </div>
           
@@ -65,12 +105,26 @@
             <i class="fas fa-envelope"></i>
             <div>
               <h4>Email</h4>
-              <p>info@srengineering.com</p>
+              <p>srengineering503@gmail.com</p>
             </div>
           </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-globe"></i>
+            <div>
+              <h4>IndiaMART</h4>
+              <p>
+                <a href="https://m.indiamart.com/srengineering-newdelhi/profile.html" target="_blank">
+                  View Our IndiaMART Profile
+                </a>
+              </p>
+            </div>
+          </div>
+          
         </div>
         
-        <div class="contact-form">
+        <!-- Slide in from the right -->
+        <div class="contact-form reveal-right delay-200">
           <h2>Send Enquiry</h2>
           <form>
             <div class="form-group">
@@ -89,24 +143,43 @@
               <label>Message / Product Requirement</label>
               <textarea rows="5" placeholder="Tell us about your requirement..." required></textarea>
             </div>
-            <button type="submit" class="btn primary">Send Message</button>
+            <button type="submit" class="btn primary">
+              Send Enquiry
+            </button>
           </form>
         </div>
+        
       </div>
     </div>
   </section>
   
-  <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224156.9384758957!2d76.95317929457636!3d28.618037130545935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d029c5c4d0937%3A0x6b4055b85a11d279!2sMayapuri%20Industrial%20Area%20Phase%20I%2C%20Mayapuri%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1683210000000!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <!-- Map fading up -->
+  <div class="map-container reveal delay-100">
+    <iframe src="https://maps.google.com/maps?q=Hari%20Nagar%20New%20Delhi&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy">
+    </iframe>
   </div>
   
   <footer>
     <div class="container">
-      <div class="footer-bottom">
-        <p>&copy; 2025 S R Engineering. All Rights Reserved.</p>
+      
+      <!-- Footer fading up -->
+      <div class="footer-bottom reveal">
+        <p><strong>S R Engineering</strong></p>
+        <p>Owner: Shobhana V P Chandran</p>
+        <p>Marketing Manager: Vysakh Ravi</p>
+        <p>Phone: +91 9891080677 | +91 8076716378</p>
+        <p>Email: srengineering503@gmail.com</p>
+        <p>
+          <a href="https://m.indiamart.com/srengineering-newdelhi/profile.html" target="_blank">
+            IndiaMART Profile
+          </a>
+        </p>
+        <p>© 2026 S R Engineering. All Rights Reserved.</p>
       </div>
+      
     </div>
   </footer>
+  
   <script src="script.js"></script>
 </body>
 

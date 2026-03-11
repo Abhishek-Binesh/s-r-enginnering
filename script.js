@@ -28,3 +28,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+// Intersection Observer for Scroll Animations
+const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+const scrollObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      // Optional: Stop observing once revealed
+      scrollObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.15, // Trigger when 15% of the element is visible
+  rootMargin: '0px 0px -50px 0px'
+});
+
+revealElements.forEach(el => scrollObserver.observe(el));
