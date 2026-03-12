@@ -4,38 +4,40 @@
    ========================================= */
 
 /* Import Fonts: Inter for Body, Space Grotesk for Headings */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap");
 
 :root {
   /* COLOR PALETTE */
-  --bg-void: #ffffff;             /* Pure White Page Background */
-  --bg-surface: #f8fafc;          /* Light Slate/Gray for sections */
-  --color-primary: #4f46e5;       /* Deep Indigo for Primary Brand */
+  --bg-void: #ffffff; /* Pure White Page Background */
+  --bg-surface: #f8fafc; /* Light Slate/Gray for sections */
+  --color-primary: #4f46e5; /* Deep Indigo for Primary Brand */
   --color-primary-hover: #4338ca; /* Darker Indigo for hover states */
-  --color-accent: #e0e7ff;        /* Soft Indigo/Lavender tint for highlights */
-  
+  --color-accent: #e0e7ff; /* Soft Indigo/Lavender tint for highlights */
+
   /* Text Colors */
-  --text-main: #0f172a;           /* Deep Slate for main text */
-  --text-inverse: #ffffff;        /* White text for buttons/dark areas */
-  --text-muted: #475569;          /* Soft Gray for secondary text */
-  
+  --text-main: #0f172a; /* Deep Slate for main text */
+  --text-inverse: #ffffff; /* White text for buttons/dark areas */
+  --text-muted: #475569; /* Soft Gray for secondary text */
+
   /* UI Elements */
-  --card-bg: #ffffff;             
-  --border-color: #e2e8f0;        
-  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-  --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --shadow-soft:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-hover:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   --shadow-primary: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
-  
+
   /* Shapes */
   --border-radius-lg: 24px;
   --border-radius-md: 12px;
   --border-radius-sm: 8px;
   --border-radius-pill: 9999px;
-  
+
   /* Typography */
-  --font-heading: 'Space Grotesk', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
-  
+  --font-heading: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-fast: all 0.2s ease-in-out;
 }
@@ -77,9 +79,15 @@
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* Scroll Reveal Classes (Add .reveal to HTML elements, toggle .active via JS) */
@@ -117,10 +125,18 @@
 }
 
 /* Delay Utility Classes for staggered grids */
-.delay-100 { transition-delay: 100ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
+.delay-100 {
+  transition-delay: 100ms;
+}
+.delay-200 {
+  transition-delay: 200ms;
+}
+.delay-300 {
+  transition-delay: 300ms;
+}
+.delay-400 {
+  transition-delay: 400ms;
+}
 
 /* =========================================
    Global Reset & Base
@@ -172,7 +188,10 @@ img {
 /* =========================================
    Typography
    ========================================= */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
@@ -203,10 +222,19 @@ p {
 /* =========================================
    Utility Classes
    ========================================= */
-.text-center { text-align: center; }
-.mt-2 { margin-top: 2rem; }
-.mb-2 { margin-bottom: 2rem; }
-.highlight { color: var(--color-primary); font-style: italic; }
+.text-center {
+  text-align: center;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.highlight {
+  color: var(--color-primary);
+  font-style: italic;
+}
 
 .line {
   height: 4px;
@@ -219,7 +247,7 @@ p {
 }
 
 .line::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -230,13 +258,17 @@ p {
 }
 
 @keyframes slideRight {
-  100% { left: 100%; }
+  100% {
+    left: 100%;
+  }
 }
 
 /* =========================================
    Buttons & Pills
    ========================================= */
-.btn, .btn-sm, .btn-quote {
+.btn,
+.btn-sm,
+.btn-quote {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -262,9 +294,12 @@ p {
 }
 
 .btn.primary::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: var(--color-primary-hover);
   border-radius: var(--border-radius-pill);
   z-index: -1;
@@ -365,7 +400,9 @@ p {
 .top-social a {
   color: #cbd5e1;
   font-size: 1.1rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
   display: inline-block;
 }
 
@@ -441,7 +478,7 @@ p {
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -497,16 +534,46 @@ p {
    ========================================= */
 .hero {
   min-height: 85vh;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.7)), 
-              url('https://placehold.co/1920x800/1e293b/ffffff?text=Industrial+Machine+Background');
-  background-size: cover;
-  background-position: center;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("assets/factory-machine.jpg");
+
+  background-size: cover; /* makes it responsive */
+  background-position: center; /* keeps center visible */
+  background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  position: relative;
-  padding: 60px 0;
-  overflow: hidden;
+
+  padding: 60px 20px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.95),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url("images/factory-machine.jpg");
+
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.hero {
+  width: 100%;
+  max-width: 100%;
 }
 
 .hero-content {
@@ -693,22 +760,30 @@ p {
 
 /* Subtle background pulse for CTA */
 .cta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(79, 70, 229, 0.15) 0%, transparent 60%);
+  background: radial-gradient(
+    circle,
+    rgba(79, 70, 229, 0.15) 0%,
+    transparent 60%
+  );
   animation: spin 15s linear infinite;
   z-index: 0;
 }
 
 @keyframes spin {
-  100% { transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.cta h2, .cta p, .cta a {
+.cta h2,
+.cta p,
+.cta a {
   position: relative;
   z-index: 1;
 }
@@ -756,7 +831,7 @@ p {
 }
 
 .category-title::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
@@ -1008,11 +1083,11 @@ footer {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
+
   .hero-content {
     text-align: center;
   }
-  
+
   .cta {
     margin: 40px 24px;
   }
@@ -1020,17 +1095,17 @@ footer {
 
 @media (max-width: 768px) {
   .top-bar {
-    display: none; 
+    display: none;
   }
-  
+
   .menu-toggle {
     display: block;
   }
-  
+
   .logo-text p {
     display: none;
   }
-  
+
   /* Mobile Navigation */
   .nav-links {
     position: absolute;
@@ -1043,35 +1118,35 @@ footer {
     padding: 20px 24px;
     border-bottom: 1px solid var(--border-color);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    
+
     visibility: hidden;
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.3s ease;
   }
-  
+
   .nav-links.active {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
   }
-  
+
   .nav-links li {
     width: 100%;
     margin: 5px 0;
   }
-  
+
   .nav-links a {
     display: block;
     width: 100%;
     padding: 12px 16px;
     border-radius: var(--border-radius-sm);
   }
-  
+
   .nav-links a::after {
     display: none;
   }
-  
+
   .btn-quote {
     margin-left: 0;
     margin-top: 10px;
@@ -1079,31 +1154,33 @@ footer {
     text-align: center;
     background-color: var(--color-primary) !important;
   }
-  
+
   /* Sections Adjustments */
   .section {
     padding: 60px 0;
   }
-  
+
   .features {
     margin-top: 0;
     padding-top: 40px;
   }
-  
+
   .page-header {
     padding: 50px 0 40px;
   }
-  
+
   .contact-wrapper {
     padding: 30px 20px;
   }
-  
+
   .footer-grid {
     gap: 30px;
   }
-  
+
   /* Reduce animation distance on mobile */
-  .reveal, .reveal-left, .reveal-right {
+  .reveal,
+  .reveal-left,
+  .reveal-right {
     transform: translateY(20px);
   }
 }
@@ -1113,7 +1190,7 @@ footer {
     flex-direction: column;
     width: 100%;
   }
-  
+
   .hero-btns .btn {
     width: 100%;
   }
