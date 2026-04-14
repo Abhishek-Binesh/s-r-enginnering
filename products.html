@@ -1,291 +1,409 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Our Products | S R Engineering</title>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
+    <title>Our Products | S R Engineering</title>
 
-<body>
-  
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-info">
-        <span><i class="fas fa-phone-alt"></i> +91 9891080677</span>
-        <span><i class="fas fa-phone-alt"></i> +91 8076716378</span>
-        <span><i class="fas fa-envelope"></i> srengineering503@gmail.com</span>
-        <span><i class="fas fa-map-marker-alt"></i> Hari Nagar, New Delhi, India</span>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-info">
+          <span><i class="fas fa-phone-alt"></i> +91 9891080677</span>
+          <span><i class="fas fa-phone-alt"></i> +91 8076716378</span>
+          <span
+            ><i class="fas fa-envelope"></i> srengineering503@gmail.com</span
+          >
+          <span
+            ><i class="fas fa-map-marker-alt"></i> Hari Nagar, New Delhi,
+            India</span
+          >
+        </div>
       </div>
     </div>
-  </div>
-  
-  <nav class="navbar">
-    <div class="container">
-      
-      <a href="index.html" class="logo">
-        <span class="logo-icon"><i class="fas fa-cogs"></i></span>
-        <div class="logo-text">
-          <h1>S R Engineering</h1>
+
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <span class="logo-icon"><i class="fas fa-cogs"></i></span>
+          <div class="logo-text">
+            <h1>S R Engineering</h1>
+          </div>
+        </a>
+
+        <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="btn-quote">Get Quote</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Header automatically animates via CSS -->
+    <div class="page-header">
+      <div class="container">
+        <h1>Our Products</h1>
+        <p>Industrial Machinery for Printing, Packaging & Paper Converting</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <!-- Printing Machines -->
+        <h2 class="category-title reveal-left">Printing Machines</h2>
+
+        <div class="product-grid">
+          <div class="product-card reveal delay-100">
+            <div class="product-img">
+              <img
+                src="assets/rotogravure.jpg"
+                alt="Rotogravure Printing Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Rotogravure Printing Machine</h3>
+              <p>
+                Industrial high speed rotogravure printing machine for flexible
+                packaging materials.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal delay-200">
+            <div class="product-img">
+              <img
+                src="assets/rolltoroll.jpg"
+                alt="Roll to Roll Flexographic Printing Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Roll to Roll Flexographic Printing Machine</h3>
+              <p>
+                Precision flexographic printing system used in packaging and
+                label printing.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
         </div>
-      </a>
-      
-      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
-        <i class="fas fa-bars"></i>
+
+        <!-- Lamination Machines -->
+        <h2 class="category-title reveal-left">Lamination Machines</h2>
+
+        <div class="product-grid">
+          <div class="product-card reveal delay-100">
+            <div class="product-img">
+              <img
+                src="assets/solventbased.webp"
+                alt="Solvent Base Lamination Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Solvent Base Lamination Machine</h3>
+              <p>
+                High performance lamination machine for packaging film and paper
+                lamination.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal delay-200">
+            <div class="product-img">
+              <img
+                src="assets/solventless.jpg"
+                alt="Solventless Lamination Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Solventless Lamination Machine</h3>
+              <p>
+                Eco friendly lamination technology for flexible packaging
+                production.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slitting & Rewinding Machines -->
+        <h2 class="category-title reveal-left">
+          Slitting & Rewinding Machines
+        </h2>
+
+        <div class="product-grid">
+          <div class="product-card reveal delay-100">
+            <div class="product-img">
+              <img
+                src="assets/drumslit.webp"
+                alt="Drum Type Slitting and Rewinding Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Drum Type Slitting and Rewinding Machine</h3>
+              <p>
+                High precision slitting machine used for flexible packaging
+                films and paper.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal delay-200">
+            <div class="product-img">
+              <img
+                src="assets/duplexslit.webp"
+                alt="Duplex Type Slitting and Rewinding Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Duplex Type Slitting and Rewinding Machine</h3>
+              <p>
+                Heavy duty duplex slitting machine designed for high production
+                lines.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper Converting Machines -->
+        <h2 class="category-title reveal-left">Paper Converting Machines</h2>
+
+        <div class="product-grid">
+          <div class="product-card reveal delay-100">
+            <div class="product-img">
+              <img
+                src="assets/rolltosheet.avif"
+                alt="Roll to Sheet Cutting Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Roll to Sheet Cutting Machine</h3>
+              <p>
+                Automatic machine used to convert roll material into sheet
+                format.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal delay-200">
+            <div class="product-img">
+              <img
+                src="assets/papercore.webp"
+                alt="Paper Core Cutting Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Paper Core Cutting Machine</h3>
+              <p>
+                Used for cutting paper cores required in paper roll
+                manufacturing.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal delay-300">
+            <div class="product-img">
+              <img src="assets/posroll.jpg" alt="POS Roll Making Machine" />
+            </div>
+            <div class="product-info">
+              <h3>POS Roll Making Machine</h3>
+              <p>
+                Production machine for POS billing rolls and thermal paper
+                rolls.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal delay-400">
+            <div class="product-img">
+              <img
+                src="assets/barcodelabel.avif"
+                alt="Barcode Label Making Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Barcode Label Making Machine</h3>
+              <p>
+                Industrial machine for producing barcode labels and sticker
+                rolls.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal delay-100">
+            <div class="product-img">
+              <img
+                src="assets/a3a4a5.avif"
+                alt="A4 / A3 / A5 Sheet Making Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>A4 / A3 / A5 Sheet Making Machine</h3>
+              <p>
+                Automatic copier paper sheet cutting machine for A4, A3 and A5
+                sizes.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Packaging Product Machines -->
+        <h2 class="category-title reveal-left">Packaging Product Machines</h2>
+
+        <div class="product-grid">
+          <div class="product-card reveal delay-100">
+            <div class="product-img">
+              <img src="assets/paperbag.webp" alt="Paper Bag Making Machine" />
+            </div>
+            <div class="product-info">
+              <h3>Paper Bag Making Machine</h3>
+              <p>Automatic eco friendly paper bag manufacturing machine.</p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal delay-200">
+            <div class="product-img">
+              <img
+                src="assets/tissuepaper.avif"
+                alt="Tissue Paper Making Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Tissue Paper Making Machine</h3>
+              <p>
+                Machine used to produce tissue paper and napkin paper products.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal delay-300">
+            <div class="product-img">
+              <img src="assets/bopptape.jpeg" alt="BOPP Tape Making Machine" />
+            </div>
+            <div class="product-info">
+              <h3>BOPP Tape Making Machine</h3>
+              <p>
+                Machine used for manufacturing adhesive BOPP packaging tapes.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal delay-400">
+            <div class="product-img">
+              <img
+                src="assets/kitchenfoil.webp"
+                alt="Kitchen Foil & Butter Paper Roll Making Machine"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Kitchen Foil & Butter Paper Roll Making Machine</h3>
+              <p>
+                Machine used for rewinding kitchen foil and butter paper rolls.
+              </p>
+              <a href="contact.html" class="btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-bottom reveal">
+          <p>Owner: Shobhana V P Chandran | Marketing Manager: Vysakh Ravi</p>
+
+          <p>Phone: +91 9891080677 | +91 8076716378</p>
+
+          <p>Email: srengineering503@gmail.com</p>
+
+          <p>
+            <a
+              href="https://m.indiamart.com/srengineering-newdelhi/profile.html"
+              target="_blank"
+            >
+              IndiaMART Profile
+            </a>
+          </p>
+
+          <p>© 2026 S R Engineering. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Chatbot UI -->
+    <div class="chatbot-container">
+      <button
+        class="chatbot-toggler"
+        id="chatbot-toggler"
+        aria-label="Toggle Chatbot"
+      >
+        <i class="fas fa-comment-dots"></i>
+        <i class="fas fa-times"></i>
       </button>
-      
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="products.html" class="active">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="btn-quote">Get Quote</a></li>
-      </ul>
-      
-    </div>
-  </nav>
-  
-  <!-- Page Header automatically animates via CSS -->
-  <div class="page-header">
-    <div class="container">
-      <h1>Our Products</h1>
-      <p>Industrial Machinery for Printing, Packaging & Paper Converting</p>
-    </div>
-  </div>
-  
-  <section class="section">
-    <div class="container">
-      
-      <!-- Printing Machines -->
-      <h2 class="category-title reveal-left">Printing Machines</h2>
-      
-      <div class="product-grid">
-        <div class="product-card reveal delay-100">
-          <div class="product-img">
-            <img src="assets/rotogravure.jpg" alt="Rotogravure Printing Machine">
+      <div class="chatbot-window" id="chatbot-window">
+        <div class="chat-header">
+          <div class="chat-title">
+            <i class="fas fa-robot"></i>
+            <span>S R Engineering Support</span>
           </div>
-          <div class="product-info">
-            <h3>Rotogravure Printing Machine</h3>
-            <p>Industrial high speed rotogravure printing machine for flexible packaging materials.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
+          <button class="close-chat" id="close-chat" aria-label="Close Chat">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="chat-body" id="chat-body">
+          <div class="message bot">
+            <p>
+              Hello! 👋 Welcome to S R Engineering. How can I help you today
+              with our industrial machinery?
+            </p>
           </div>
         </div>
-        
-        <div class="product-card reveal delay-200">
-          <div class="product-img">
-            <img src="assets/rolltoroll.jpg" alt="Roll to Roll Flexographic Printing Machine">
-          </div>
-          <div class="product-info">
-            <h3>Roll to Roll Flexographic Printing Machine</h3>
-            <p>Precision flexographic printing system used in packaging and label printing.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
+        <div class="chat-footer">
+          <form id="chat-form">
+            <input
+              type="text"
+              id="chat-input"
+              placeholder="Type a message..."
+              required
+              autocomplete="off"
+            />
+            <button type="submit" aria-label="Send Message">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
-      </div>
-      
-      <!-- Lamination Machines -->
-      <h2 class="category-title reveal-left">Lamination Machines</h2>
-      
-      <div class="product-grid">
-        <div class="product-card reveal delay-100">
-          <div class="product-img">
-            <img src="assets/solventbased.webp" alt="Solvent Base Lamination Machine">
-          </div>
-          <div class="product-info">
-            <h3>Solvent Base Lamination Machine</h3>
-            <p>High performance lamination machine for packaging film and paper lamination.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-        
-        <div class="product-card reveal delay-200">
-          <div class="product-img">
-            <img src="assets/solventless.jpg" alt="Solventless Lamination Machine">
-          </div>
-          <div class="product-info">
-            <h3>Solventless Lamination Machine</h3>
-            <p>Eco friendly lamination technology for flexible packaging production.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Slitting & Rewinding Machines -->
-      <h2 class="category-title reveal-left">Slitting & Rewinding Machines</h2>
-      
-      <div class="product-grid">
-        <div class="product-card reveal delay-100">
-          <div class="product-img">
-            <img src="assets/drumslit.webp" alt="Drum Type Slitting and Rewinding Machine">
-          </div>
-          <div class="product-info">
-            <h3>Drum Type Slitting and Rewinding Machine</h3>
-            <p>High precision slitting machine used for flexible packaging films and paper.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-        
-        <div class="product-card reveal delay-200">
-          <div class="product-img">
-            <img src="assets/duplexslit.webp" alt="Duplex Type Slitting and Rewinding Machine">
-          </div>
-          <div class="product-info">
-            <h3>Duplex Type Slitting and Rewinding Machine</h3>
-            <p>Heavy duty duplex slitting machine designed for high production lines.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Paper Converting Machines -->
-      <h2 class="category-title reveal-left">Paper Converting Machines</h2>
-      
-      <div class="product-grid">
-        <div class="product-card reveal delay-100">
-          <div class="product-img">
-            <img src="assets/rolltosheet.avif" alt="Roll to Sheet Cutting Machine">
-          </div>
-          <div class="product-info">
-            <h3>Roll to Sheet Cutting Machine</h3>
-            <p>Automatic machine used to convert roll material into sheet format.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-        
-        <div class="product-card reveal delay-200">
-          <div class="product-img">
-            <img src="assets/papercore.webp" alt="Paper Core Cutting Machine">
-          </div>
-          <div class="product-info">
-            <h3>Paper Core Cutting Machine</h3>
-            <p>Used for cutting paper cores required in paper roll manufacturing.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-        
-        <div class="product-card reveal delay-300">
-          <div class="product-img">
-            <img src="assets/posroll.jpg" alt="POS Roll Making Machine">
-          </div>
-          <div class="product-info">
-            <h3>POS Roll Making Machine</h3>
-            <p>Production machine for POS billing rolls and thermal paper rolls.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-        
-        <div class="product-card reveal delay-400">
-          <div class="product-img">
-            <img src="assets/barcodelabel.avif" alt="Barcode Label Making Machine">
-          </div>
-          <div class="product-info">
-            <h3>Barcode Label Making Machine</h3>
-            <p>Industrial machine for producing barcode labels and sticker rolls.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-        
-        <div class="product-card reveal delay-100">
-          <div class="product-img">
-            <img src="assets/a3a4a5.avif" alt="A4 / A3 / A5 Sheet Making Machine">
-          </div>
-          <div class="product-info">
-            <h3>A4 / A3 / A5 Sheet Making Machine</h3>
-            <p>Automatic copier paper sheet cutting machine for A4, A3 and A5 sizes.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Packaging Product Machines -->
-      <h2 class="category-title reveal-left">Packaging Product Machines</h2>
-      
-      <div class="product-grid">
-        <div class="product-card reveal delay-100">
-          <div class="product-img">
-            <img src="assets/paperbag.webp" alt="Paper Bag Making Machine">
-          </div>
-          <div class="product-info">
-            <h3>Paper Bag Making Machine</h3>
-            <p>Automatic eco friendly paper bag manufacturing machine.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-        
-        <div class="product-card reveal delay-200">
-          <div class="product-img">
-            <img src="assets/tissuepaper.avif" alt="Tissue Paper Making Machine">
-          </div>
-          <div class="product-info">
-            <h3>Tissue Paper Making Machine</h3>
-            <p>Machine used to produce tissue paper and napkin paper products.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-        
-        <div class="product-card reveal delay-300">
-          <div class="product-img">
-            <img src="assets/bopptape.jpeg" alt="BOPP Tape Making Machine">
-          </div>
-          <div class="product-info">
-            <h3>BOPP Tape Making Machine</h3>
-            <p>Machine used for manufacturing adhesive BOPP packaging tapes.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-        
-        <div class="product-card reveal delay-400">
-          <div class="product-img">
-            <img src="assets/kitchenfoil.webp" alt="Kitchen Foil & Butter Paper Roll Making Machine">
-          </div>
-          <div class="product-info">
-            <h3>Kitchen Foil & Butter Paper Roll Making Machine</h3>
-            <p>Machine used for rewinding kitchen foil and butter paper rolls.</p>
-            <a href="contact.html" class="btn-sm">Enquire Now</a>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  
-  <footer>
-    <div class="container">
-      <div class="footer-bottom reveal">
-        
-        <p>
-          Owner: Shobhana V P Chandran |
-          Marketing Manager: Vysakh Ravi
-        </p>
-        
-        <p>
-          Phone: +91 9891080677 | +91 8076716378
-        </p>
-        
-        <p>
-          Email: srengineering503@gmail.com
-        </p>
-        
-        <p>
-          <a href="https://m.indiamart.com/srengineering-newdelhi/profile.html" target="_blank">
-            IndiaMART Profile
-          </a>
-        </p>
-        
-        <p>© 2026 S R Engineering. All Rights Reserved.</p>
-        
       </div>
     </div>
-  </footer>
-  
-  <script src="script.js"></script>
-  
-</body>
 
+    <script src="script.js"></script>
+  </body>
 </html>
