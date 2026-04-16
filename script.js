@@ -55,7 +55,7 @@ revealElements.forEach((el) => scrollObserver.observe(el));
 /* =========================================
    Chatbot Logic
    ========================================= */
-const WORKER_URL = "YOUR_WORKER_URL_HERE"; // <--- Replace with your Cloudflare worker URL
+const WORKER_URL = "/api/aiBot"; // <--- Replace with your Cloudflare worker URL
 
 const chatbotContainer = document.querySelector(".chatbot-container");
 const chatbotToggler = document.getElementById("chatbot-toggler");
@@ -157,7 +157,7 @@ chatForm.addEventListener("submit", async (e) => {
 /* =========================================
    Contact Form Logic
    ========================================= */
-const EMAIL_WORKER_URL = "YOUR_EMAIL_WORKER_URL_HERE"; // <--- Replace with your Cloudflare Email Worker URL
+const EMAIL_WORKER_URL = "/api/getQuote"; // <--- Replace with your Cloudflare Email Worker URL
 
 const contactForm = document.getElementById("contact-form");
 if (contactForm) {
