@@ -15,7 +15,7 @@ export async function onRequest({ request, env }) {
     const systemPrompt =
       "You are a helpful AI assistant for S R Engineering...";
 
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${env.GEMINI_API_KEY}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${env.GEMINI_API_KEY}`;
 
     const geminiRequest = {
       // FIX: 'parts' MUST be an array [ { text: "..." } ]
