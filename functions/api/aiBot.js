@@ -25,10 +25,13 @@ export async function onRequest({ request, env }) {
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${env.GEMINI_API_KEY}`;
 
     const geminiRequest = {
-      systemInstruction: {
-        parts: [{ text: systemPrompt }],
-      },
-      contents: userHistory,
+      contents: [
+        {
+          role: "user",
+          parts: [{ text: systemPrompt }],
+        },
+        ...userHistory,
+      ],
     };
 
     const apiResponse = await fetch(geminiUrl, {
@@ -39,8 +42,16 @@ export async function onRequest({ request, env }) {
 
     const data = await apiResponse.json();
 
-    const replyText =
-      data?.candidates?.[0]?.content?.parts?.[0]?.text || "Sorry, no response.";
+    console.log("Gemini FULL response:", JSON.stringify(data, null, 2));
+
+    let replyText = "Sorry, no response.";
+
+    if (data?.candidates?.length) {
+      const parts = data.candidates[0]?.content?.parts;
+      if (parts && parts.length > 0) {
+        replyText = parts.map((p) => p.text || "").join("");
+      }
+    }
 
     return new Response(JSON.stringify({ reply: replyText }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
